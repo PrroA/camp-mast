@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* 最上方的導覽列 */
+
+.top {
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    border-bottom: 2px solid black;
+    z-index: 10;
+}
+
+.top img {
+    margin-top: 20px;
+    height: 50px;
+    padding-bottom: 5px;
+
+}
+
+
+nav ul {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 40px;
+    background-color: rgb(255, 255, 255);
+    list-style: none;
+    /* 移除項目符號 */
+
+
+}
+
+nav a {
+    color: inherit;
+    /* 移除超連結顏色 */
+    display: block;
+    /* 讓 <a> 填滿 <li> */
+    font-size: 1.2rem;
+    padding: 10px;
+    text-decoration: none;
+    /* 移除超連結底線 */
+    font-weight: 900;
+}
+
+/* 滑鼠移到 <a> 時變成深底淺色 */
+nav li:hover {
+    background-color: rgb(255, 255, 255);
+    color: #cc5200;
+}
+
+.inline-block-nav {
+    text-align: center;
+    font-size: 0;
+    /* 移除 <li> 之間的空隙 */
+}
+
+.inline-block-nav>li {
+    display: inline-block;
+}
+
+#content-container {
+    max-width: 65rem;
+    margin: 0 auto;
+}
+
+#banner {
+    width: 100%;
+    margin-top: 100px;
+}
+
+#content {
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+#sidebar {
+    width: 18rem;
+    height: 70vh;
+}
+
+#sidebar ul {
+    list-style: none;
+    box-shadow: 0px 4px 5px -2px #211B1B;
+}
+
+#sidebar li {
+    text-align: center;
+    line-height: 2em;
+    border-bottom: 0.5px solid #211B1B;
+}
+
+#sidebar a {
+    text-decoration: none;
+}
+
+#sidebar li:first-child {
+    line-height: 3em;
+    background-color: #211B1B;
+    color: white;
+}
+
+#sidebar li:not(:first-child) {
+    cursor: pointer;
+}
+
+#products {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+
+.product {
+    width: 18em;
+    height: 22em;
+    display: flex;
+    flex-direction: column;
+}
+
+.price {
+    align-self: flex-end;
+}
+
+.product :last-child {
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.product img {
+    width: 100%;
+    height: 300px;
+}
+
+.product button {
+    display: inline-block;
+    border-radius: 20px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 20px;
+    width: 200px;
+    transition: all 2s;
+    cursor: pointer;
+    margin: 1px;
+}
+
+.spacing {
+    flex-grow: 1;
+}
+
+#main {
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#more {
+    padding: 3em 0;
+    cursor: pointer;
+}
+
+#to-top {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 1.2em;
+    height: 1.2em;
+    font-size: 50px;
+    padding: 10px;
+    border-radius: 0.75em;
+    background-color: #EFD9D9;
+    cursor: pointer;
+}
+
+#to-top img {
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.btn {
+    margin: 0 auto;
+    display: block;
+    font-size: 2em;
+
+    color: #0099CC;
+    /* 清除背景色 */
+    background: transparent;
+    /* 邊框样式、颜色、宽度 */
+    border: 2px solid #0099CC;
+    /* 给邊框添加圆角 */
+    border-radius: 10px;
+    /* 字母轉大寫 */
+    /* border: none; */
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+
+}
+
+.btn:hover {
+    background-color: #0099CC;
+    color: white;
+    border-radius: 2rem;
+}
+
+
+/* 最後footer 介紹 */
+footer {
+    line-height: 1.6;
+    background-color: black;
+    color: aliceblue;
+    padding: 20px;
+    border-bottom: 2px solid red;
+    margin-top: 20px;
+}
+
+
+.fin {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    padding-top: 20px;
+}
+
+.fin p {
+    color: aliceblue;
+}

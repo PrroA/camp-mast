@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/bott.jpg);
+}
+
+
+
+/* 最上方的導覽列 */
+
+.top {
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    border-bottom: 2px solid black;
+    z-index: 10;
+}
+
+.top img {
+    margin-top: 20px;
+    height: 50px;
+    padding-bottom: 5px;
+
+}
+
+
+nav ul {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 40px;
+    background-color: rgb(255, 255, 255);
+    list-style: none;
+    /* 移除項目符號 */
+
+
+}
+
+nav a {
+    color: inherit;
+    /* 移除超連結顏色 */
+    display: block;
+    /* 讓 <a> 填滿 <li> */
+    font-size: 1.2rem;
+    padding: 10px;
+    text-decoration: none;
+    /* 移除超連結底線 */
+    font-weight: 900;
+}
+
+/* 滑鼠移到 <a> 時變成深底淺色 */
+nav li:hover {
+    background-color: rgb(255, 255, 255);
+    color: #cc5200;
+}
+
+.inline-block-nav {
+    text-align: center;
+    font-size: 0;
+    /* 移除 <li> 之間的空隙 */
+}
+
+.inline-block-nav>li {
+    display: inline-block;
+}
+
+#content-container {
+    max-width: 65rem;
+    margin: 0 auto;
+}
+
+#banner {
+    width: 100%;
+    margin-top: 100px;
+}
+
+#qa-container {
+
+    width: 100%;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+.question>input {
+    display: none;
+}
+
+.question {
+    display: block;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.question>div>span:first-child {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.question>div>span:last-child {
+    padding-left: 10px;
+    display: inline-block;
+}
+
+.a-content {
+    margin-left: 1.2em;
+    display: flex;
+    align-items: baseline;
+    overflow-y: hidden;
+    max-height: 0;
+    transition: max-height 1s;
+}
+
+.question input:checked~.a-content {
+    max-height: 5em;
+}
+
+.down-arrow {
+    display: inline-block;
+    transition: transform .5s;
+}
+
+.question input:checked+div .down-arrow {
+    transform: rotate(360deg);
+}
+
+#to-top {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 1.2em;
+    height: 1.2em;
+    font-size: 50px;
+    padding: 10px;
+    border-radius: 0.75em;
+    background-color: #EFD9D9;
+    cursor: pointer;
+}
+
+#to-top img {
+    width: 100%;
+}
+
+footer {
+    margin-top: 20px;
+    line-height: 1.6;
+    background-color: black;
+    color: aliceblue;
+    padding: 20px;
+    border-bottom: 2px solid red;
+}
+
+
+.fin {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    padding-top: 20px;
+}
+
+.fin p {
+    color: aliceblue;
+}
