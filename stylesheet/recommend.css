@@ -1,6 +1,7 @@
 body {
     overflow-x: hidden;
     background-image: url(../img/bott.jpg);
+    background-size: cover;
 }
 
 body h1 {
